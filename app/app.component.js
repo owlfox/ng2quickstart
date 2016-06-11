@@ -12,11 +12,13 @@ var core_1 = require('@angular/core');
 //A [@Component decorator](https://angular.io/docs/ts/latest/quickstart.html#component-decorator) that tells Angular what template to use and how to create the component.
 var AppComponent = (function () {
     function AppComponent() {
+        this.title = 'Tour of Heroes';
+        this.hero = 'Windstorm';
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<h1>My First Angular 2 App</h1>'
+            template: '<h1>{{title}}</h1><h2>{{hero}} details!</h2>'
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
